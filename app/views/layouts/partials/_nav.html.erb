@@ -1,1 +1,14 @@
-<h2>nav</h2>
+<div class="header-container">
+  <div class="leftfloat">Logo</div>
+  <div class="rightfloat" data-controller="toggle">
+    <button data-action="click->toggle#toggle" class="button-7" role="button">Menu</button>
+    <!-- Toggle target is the div containing the menu -->
+    <div data-toggle-target="toggalableElement" class="sidebar sidebar-hidden">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+</div>

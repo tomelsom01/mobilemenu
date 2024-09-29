@@ -1,13 +1,14 @@
-<h1 >hello menu</h1>
+<h1>Hello Menu</h1>
 
+<!-- The toggle controller should manage the functionality -->
 <div data-controller="toggle">
-  <button class="button-7" role="button-7">menu</button>
-</div>
-<button data-action="click->toggle#fire" class="button21" role="button"></button>
-<div data-toggle-target="toggalableElement" class="displaynone">
-  <ul>
-    <li>home</li>
-    <li>about</li>
-    <li>contact</li>
-  </ul>
+  <button data-action="click->toggle#toggle" class="button-7" role="button">Menu</button>
+  <!-- Toggle target is the div containing the menu -->
+  <div data-toggle-target="toggalableElement" class="displaynone">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
 </div>
